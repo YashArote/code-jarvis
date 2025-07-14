@@ -2,6 +2,9 @@
 
 name: Android Release Build
 
+permissions:
+  contents: write
+
 on:
   push:
     tags:
