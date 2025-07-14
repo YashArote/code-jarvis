@@ -40,7 +40,6 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private List<ChatMessage> messages = new ArrayList<>();
     private final Context context;
-
     private final String repo_url;
 
     public ChatAdapter(Context context,String repo_url) {
