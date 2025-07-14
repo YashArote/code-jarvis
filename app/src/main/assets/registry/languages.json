@@ -1,0 +1,64 @@
+{
+  "languages": [
+    {
+      "grammar": "registry/python.json",
+      "name": "python",
+      "scopeName": "source.python"
+    },
+    {
+      "grammar": "registry/java.json",
+      "name": "java",
+      "scopeName": "source.java"
+    },
+    {
+      "grammar": "registry/cpp.json",
+      "name": "cpp",
+      "scopeName": "source.cpp"
+    },
+    {
+      "grammar": "registry/c.json",
+      "name": "c",
+      "scopeName": "source.c"
+    },
+    {
+      "grammar": "registry/json.json",
+      "name": "json",
+      "scopeName": "source.json"
+    },
+    {
+      "grammar": "registry/php.json",
+      "name": "php",
+      "scopeName": "source.php"
+    },
+    {
+      "grammar": "registry/javascript.json",
+      "name": "javascript",
+      "scopeName": "source.js"
+    },
+    {
+      "grammar": "registry/html.json",
+      "name": "html",
+      "scopeName": "source.html"
+    },
+    {
+      "grammar": "registry/plaintext.json",
+      "name": "plaintext",
+      "scopeName": "source.plain"
+    },
+    {
+      "grammar": "registry/css.json",
+      "name": "css",
+      "scopeName": "source.css"
+    },
+    {
+      "grammar": "registry/csharp.json",
+      "name": "csharp",
+      "scopeName": "source.cs"
+    },
+    {
+      "grammar": "registry/kotlin.json",
+      "name": "kotlin",
+      "scopeName": "source.kotlin"
+    }
+  ]
+}

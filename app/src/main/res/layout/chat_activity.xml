@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:backgroundTint="#EFEFEF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/chat_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#101417"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#169EA8"
+            android:contentInsetStart="16dp"
+            android:contentInsetEnd="16dp"
+            android:elevation="4dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:subtitleTextColor="#CCFFFFFF"
+
+            android:titleTextColor="@android:color/white"
+            app:popupTheme="@style/MyPopupMenuStyle">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|bottom"
+                android:fontFamily="@font/regular"
+                android:paddingBottom="10dp"
+
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Chat Messages List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chat_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorOnPrimary"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingBottom="8dp" />
+
+        <!-- Input Bar -->
+        <LinearLayout
+            android:id="@+id/chat_input_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp"
+            android:background="#1B1F23"
+            android:backgroundTint="#1F262B"
+            android:backgroundTintMode="src_in"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:elevation="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <EditText
+                android:id="@+id/chat_input"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="monospace"
+                android:hint="Ask Jarvis..."
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="#D3F9FF"
+                android:textColorHint="#6C8A93"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/send_button"
+                android:layout_width="56dp"
+                android:layout_height="46dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Send"
+                android:enabled="false"
+                android:src="@android:drawable/ic_menu_send"
+                app:tint="#48E1EC" />
+        </LinearLayout>
+
+    </LinearLayout>
+  <LinearLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#1B1F23"
+        android:backgroundTint="#1F262B"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_margin="16dp"
+            android:text="File Explorer"
+            android:textSize="16sp" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/undo"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:padding="17dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_left_arrow"
+            android:visibility="gone" />
+
+    </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/file_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingBottom="8dp" />
+        <!-- Add RecyclerView here for file explorer -->
+    </LinearLayout>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2A2A2A">
+
+    <!-- Label -->
+    <TextView
+        android:id="@+id/tv_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to:"
+        android:fontFamily="@font/regular"
+        android:textColor="@color/colorOnSurface"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- URL -->
+    <TextView
+        android:id="@+id/tv_verification_uri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textIsSelectable="true"
+        android:autoLink="web"
+        android:textSize="16sp"
+        android:fontFamily="@font/regular"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Code + Copy Button -->
+    <TextView
+        android:id="@+id/tv_instruction_1"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/regular"
+        android:text="paste the code below and please return to app and wait for some time"
+        android:textColor="@color/colorOnSurface"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_user_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorOnSurface"
+            android:textIsSelectable="true"
+            android:fontFamily="@font/regular"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/btn_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Copy code"
+            android:src="@drawable/ic_copy_white"
+            app:tint="@color/colorOnSurface" />
+    </LinearLayout>
+</LinearLayout>

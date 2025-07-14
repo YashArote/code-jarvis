@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSurface"
+    android:foregroundTint="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Custom Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#1A1B20"
+        android:elevation="4dp"
+        android:gravity="end|center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:id="@+id/github_status_container"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/github_status_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp">
+
+            <ImageView
+                android:id="@+id/github_icon"
+                android:layout_width="81dp"
+                android:layout_height="91dp"
+                android:contentDescription="GitHub Icon"
+                android:src="@drawable/git_logo"
+                app:tint="@color/colorOnSurface" />
+
+            <View
+                android:id="@+id/github_status_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/dot_green" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Main content below the toolbar -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:tabIndicatorColor="@android:color/black"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:tabTextColor="@android:color/black" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F8F8F8">
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <!-- Your content goes here -->
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/blank_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <!-- Blank or placeholder content -->
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="24dp"
+            android:contentDescription="Refresh"
+            android:foregroundTint="#000000"
+            android:src="@drawable/ic_refresh"
+            android:visibility="gone"
+            app:backgroundTint="@color/colorPrimary"
+            app:rippleColor="@color/primaryBlueDark"
+            app:tint="@color/white" />
+    </FrameLayout>
+
+
+</LinearLayout>

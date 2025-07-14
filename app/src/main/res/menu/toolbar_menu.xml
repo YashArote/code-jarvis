@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/option_one"
+        android:title="git add ."
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/option_two"
+        android:title="git commit"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/option_three"
+        android:title="git push"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/option_four"
+        android:title="git pull"
+        app:showAsAction="never"/>
+
+</menu>

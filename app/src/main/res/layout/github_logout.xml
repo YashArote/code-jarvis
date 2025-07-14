@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2A2A2A">
+
+    <!-- Label -->
+    <TextView
+        android:id="@+id/tv_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to disconnect?"
+        android:fontFamily="@font/regular"
+        android:textColor="@color/colorOnSurface"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp" />
+
+
+</LinearLayout>

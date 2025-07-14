@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Codejarvis" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#00BCD4</item> <!-- Cyan -->
+        <item name="colorPrimaryVariant">#008BA3</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Secondary colors -->
+        <item name="colorSecondary">#FF9800</item> <!-- Amber -->
+        <item name="colorSecondaryVariant">#C66900</item>
+        <item name="colorOnSecondary">#000000</item>
+
+        <!-- Backgrounds and Surfaces -->
+        <item name="android:colorBackground">#121212</item>
+        <item name="colorSurface">#1E1E1E</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+
+        <!-- Typography -->
+        <item name="android:fontFamily">@font/regular</item>
+        <item name="android:textColor">@color/text_primary</item>
+
+        <!-- Status bar and navigation -->
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:navigationBarColor">#000000</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Custom UI hints -->
+        <item name="colorOutline">#333333</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Codejarvis" parent="Base.Theme.Codejarvis" />
+</resources>

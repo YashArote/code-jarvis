@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <!-- res/values/colors.xml -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSurface">#1E1E1E</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+    <color name="colorDull">#BDBDBD</color>
+    <color name="primaryBlueDark">#2196F3</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorWarning">#FF6B6B
+    </color>
+    <color name="status_success">#4CAF50</color>   <!-- Material green -->
+    <color name="status_warning">#FFC107</color>   <!-- Material amber -->
+    <color name="status_error">#F44336</color>     <!-- Material red -->
+
+</resources>

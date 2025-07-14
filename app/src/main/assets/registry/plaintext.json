@@ -1,0 +1,9 @@
+{
+  "name": "Plain Text",
+  "scopeName": "source.plain",
+  "patterns": [],
+  "repository": {},
+  "fileTypes": ["txt", "text"],
+  "uuid": "b8e40466-5b1e-4d97-8eb5-123456789abc",
+  "version": "1.0"
+}

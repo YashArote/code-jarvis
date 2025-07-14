@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/bg_message_jarvis"
+    android:orientation="horizontal"
+    android:gravity="start">
+    <LinearLayout
+        android:id="@+id/message_bubble_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="start">
+    <View
+        android:id="@+id/dot1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/dot_shape" />
+
+    <View
+        android:id="@+id/dot2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/dot_shape" />
+
+    <View
+        android:id="@+id/dot3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/dot_shape" />
+
+    </LinearLayout>
+</LinearLayout>

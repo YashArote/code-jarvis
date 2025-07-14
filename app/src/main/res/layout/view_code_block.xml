@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bubble_child"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1B1B1B"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <io.github.rosemoe.sora.widget.CodeEditor
+        android:id="@+id/editor_codeview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbars="vertical"
+        android:padding="8dp" />
+
+    <ImageButton
+        android:id="@+id/btn_copy"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="end|top"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_copy"
+    android:contentDescription="Copy Code"
+        android:padding="4dp"
+        android:tint="#C3C3C3" />
+</FrameLayout>
+

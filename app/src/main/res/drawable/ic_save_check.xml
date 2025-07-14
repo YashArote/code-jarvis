@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base Save Icon -->
+    <item
+        android:drawable="@drawable/ic_save" />
+    <!-- Check Icon Overlay -->
+    <item
+        android:drawable="@drawable/ic_check"
+        android:gravity="top|end"
+        android:width="16dp"
+        android:height="16dp"
+        android:top="-3dp"
+        android:right="-3dp"/>
+</layer-list>
