@@ -3,8 +3,6 @@ package com.example.code_jarvis.chat;
 import com.example.code_jarvis.git.GitOperations;
 import com.example.code_jarvis.git.GitUiOperationHandler;
 
-import java.io.File;
-
 public class ChatGitOperations {
     public GitUiOperationHandler gitUiOperationHandler;
     public GitOperations gitOperations;

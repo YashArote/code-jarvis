@@ -15,7 +15,6 @@ import androidx.fragment.app.DialogFragment;
 
 import com.example.code_jarvis.R;
 import com.example.code_jarvis.git.GitOperations;
-import com.example.code_jarvis.git.GitUiOperationHandler;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -25,11 +24,7 @@ import java.util.Stack;
 
 import io.github.rosemoe.sora.langs.textmate.TextMateColorScheme;
 import io.github.rosemoe.sora.widget.CodeEditor;
-import io.github.rosemoe.sora.langs.textmate.TextMateLanguage;
-import io.github.rosemoe.sora.langs.textmate.registry.ThemeRegistry;
 import io.github.rosemoe.sora.widget.EditorSearcher;
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme;
-import okhttp3.internal.http2.Http2Reader;
 
 public class CodeEditorDialog extends DialogFragment {
 

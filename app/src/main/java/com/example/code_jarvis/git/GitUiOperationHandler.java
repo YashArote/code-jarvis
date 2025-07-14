@@ -13,8 +13,6 @@ import android.widget.ProgressBar;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.example.code_jarvis.R;
-
 public class GitUiOperationHandler {
     private final Activity activity;
     private final Handler mainHandler = new Handler(Looper.getMainLooper());

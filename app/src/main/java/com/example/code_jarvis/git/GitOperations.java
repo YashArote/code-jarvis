@@ -1,7 +1,6 @@
 package com.example.code_jarvis.git;
 
 import android.util.Log;
-import android.widget.ProgressBar;
 
 import com.example.code_jarvis.indexing.CodeIndexer;
 
@@ -9,12 +8,10 @@ import org.eclipse.jgit.api.AddCommand;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.Status;
 import org.eclipse.jgit.api.errors.EmptyCommitException;
-import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.lib.ProgressMonitor;
 import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
-import org.json.JSONException;
 import org.json.JSONObject;
-import com.google.gson.*;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;

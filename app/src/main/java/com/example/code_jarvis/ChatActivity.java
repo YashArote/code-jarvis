@@ -29,7 +29,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,7 +42,6 @@ import com.example.code_jarvis.git.GitUiOperationHandler;
 import com.example.code_jarvis.llama.LlamaBridge;
 import com.example.code_jarvis.llama.LlamaModelManager;
 
-import org.eclipse.jgit.api.Git;
 import org.eclipse.tm4e.core.registry.IThemeSource;
 
 import java.io.BufferedReader;

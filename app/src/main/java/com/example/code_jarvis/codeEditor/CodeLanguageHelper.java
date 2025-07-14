@@ -1,13 +1,10 @@
 package com.example.code_jarvis.codeEditor;
 
-import java.io.File;
 import java.util.Locale;
 
 import io.github.rosemoe.sora.langs.textmate.TextMateLanguage;
-import io.github.rosemoe.sora.*;
 import io.github.rosemoe.sora.langs.textmate.registry.GrammarRegistry;
 import io.github.rosemoe.sora.langs.textmate.registry.ThemeRegistry;
-import io.github.rosemoe.sora.langs.textmate.registry.model.GrammarDefinition;
 
 public class CodeLanguageHelper {
 

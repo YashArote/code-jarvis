@@ -1,14 +1,9 @@
 package com.example.code_jarvis.adapter;
 
-import static com.example.code_jarvis.codeEditor.CodeEditorDialog.ARG_CODE;
-
 import android.content.Context;
-import android.media.Image;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,12 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.code_jarvis.ChatActivity;
-import com.example.code_jarvis.MainActivity;
 import com.example.code_jarvis.R;
-import com.example.code_jarvis.codeEditor.CodeEditorDialog;
 
 import java.io.File;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 

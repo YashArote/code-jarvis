@@ -1,6 +1,5 @@
 package com.example.code_jarvis.adapter;
 
-import android.graphics.drawable.Icon;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
