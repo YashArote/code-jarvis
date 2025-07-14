@@ -1,18 +1,17 @@
-# .github/workflows/android-release.yml
-
-name: Android Release Build
-
-permissions:
-  contents: write
+name: Android Signed Release
 
 on:
   push:
     tags:
       - 'v*'
 
+permissions:
+  contents: write
+
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -23,11 +22,22 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
-      - name: Grant execute permission to gradlew
+      - name: Decode Keystore
+        run: |
+          echo "${{ secrets.KEYSTORE_FILE_BASE64 }}" | base64 --decode > release.keystore
+
+      - name: Grant execute to gradlew
         run: chmod +x ./gradlew
 
-      - name: Build release APK
+      - name: Build signed release APK
         run: ./gradlew assembleRelease
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+
+      - name: Find APK path
+        run: find app -name "*.apk"
 
       - name: Upload APK to GitHub Release
         uses: softprops/action-gh-release@v2
