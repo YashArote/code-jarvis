@@ -31,14 +31,43 @@ Whether you're commuting, reviewing code on the go, or coding from your phone, C
 
 ## 🖼️ App Preview
 
-| Screenshot | Description |
-|------------|-------------|
-| ![Model_Select](assets/1_model_select.png) | 📂 **Model Select** – Select from predefined model or enter a custom one. |
-| ![Repos Screen](assets/2_repos.png) | 📃 **Repos list** – Connect with github and download repo of choice. |
-| ![Downloaded Screen](assets/3_downloaded.png) | 📃 **Downloaded Repos** – Open the downloaded repo for operations. |
-| ![File_Viewer](assets/list_files.png) | 🔧 **File Viewer** – Navigate across all folders and files present. |
-| ![Editor View](assets/edit_code.png) | ✍️ **Code Editor** – Edit code with syntax highlighting supported for 10+ languages. |
-| ![Chat Screen](assets/chat_model.png) | 💬 **Chat with AI** – Talk to a local, context-free LLM about anything. |
+<table>
+  <tr>
+    <td align="center">
+      <img src="assets/1_model_select.png" width="250"/><br/>
+      📂 <b>Model Select</b><br/>
+      Select from predefined model or enter a custom one.
+    </td>
+    <td align="center">
+      <img src="assets/2_repos.png" width="250"/><br/>
+      📃 <b>Repos List</b><br/>
+      Connect with GitHub and download repo of choice.
+    </td>
+    <td align="center">
+      <img src="assets/3_downloaded.png" width="250"/><br/>
+      📃 <b>Downloaded Repos</b><br/>
+      Open the downloaded repo for operations.
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="assets/list_files.png" width="250"/><br/>
+      🔧 <b>File Viewer</b><br/>
+      Navigate across all folders and files present.
+    </td>
+    <td align="center">
+      <img src="assets/edit_code.png" width="250"/><br/>
+      ✍️ <b>Code Editor</b><br/>
+      Edit code with syntax highlighting for 10+ languages.
+    </td>
+    <td align="center">
+      <img src="assets/chat_model.png" width="250"/><br/>
+      💬 <b>Chat with AI</b><br/>
+      Talk to a local, context-free LLM about anything.
+    </td>
+  </tr>
+</table>
+
 
 ---
 
