@@ -2,7 +2,7 @@
 
 plugins {
     id("com.android.application") version "8.2.1"
-
+    id("com.github.jk1.dependency-license-report") version "2.9"
 }
 
 android {
@@ -57,7 +57,6 @@ dependencies{
     implementation(platform("io.github.Rosemoe.sora-editor:bom:0.23.5"))
     implementation("io.github.Rosemoe.sora-editor:editor")
     implementation("io.github.Rosemoe.sora-editor:language-textmate")
-    implementation("org.json:json:20090211")
     implementation("org.eclipse.jgit:org.eclipse.jgit:5.10.0.202012080955-r")
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("ch.usi.si.seart:java-tree-sitter:1.12.0")
