@@ -44,5 +44,7 @@ jobs:
         with:
           tag_name: ${{ github.ref_name }}
           files: app/build/outputs/apk/release/app-release.apk
+          draft: false
+          prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
