@@ -103,9 +103,3 @@ Issues, feedback, and PRs welcome! Help make Code Jarvis even more powerful.
 
 ---
 
-## 📄 License
-
-MIT License
-
----
-
