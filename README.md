@@ -20,7 +20,7 @@ Whether you're commuting, reviewing code on the go, or coding from your phone, C
 
 ## 🚀 Getting Started
 
-1. **Download the APK** from the [Releases](https://github.com/YOUR_USERNAME/code-jarvis/releases) tab  
+1. **Download the APK** from the [Releases](https://github.com/YashArote/code-jarvis/releases) tab  
 2. Install it on your Android device  
 3. Launch the app and:
    - Choose or paste a GGUF model URL
